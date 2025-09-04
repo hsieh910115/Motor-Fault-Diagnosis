@@ -8,7 +8,11 @@ The spectrograms are sent from Python to the MCU over UART, upon receiving the d
 
 In the master branch is the complete STM32 project, and in the python branch is the Python code.
 
-<img width="362" height="182" alt="image" src="https://github.com/user-attachments/assets/54a1c9dd-9456-4a15-a935-8d538bfab22a" />
-<img width="246" height="225" alt="image" src="https://github.com/user-attachments/assets/27c02a5e-4aab-46b7-ac06-1a3259e46b4d" /> 
-<img width="230" height="226" alt="image" src="https://github.com/user-attachments/assets/26abbf40-1b43-4c78-ae4f-858dafe7543b" />
+<img width="597" height="301" alt="image" src="https://github.com/user-attachments/assets/9eb77ce3-030a-491e-aa8b-ce0886e42f5f" />
+
+
+<img width="236" height="213" alt="image" src="https://github.com/user-attachments/assets/d7e5b568-44ef-48a1-b2d7-8de79d2e7154" />
+<img width="220" height="214" alt="image" src="https://github.com/user-attachments/assets/c677160e-ada9-45ed-a751-060515095fe4" />
+
+
 
