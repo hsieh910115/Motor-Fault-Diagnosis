@@ -1,17 +1,46 @@
-This project performs motor fault diagnosis using the University of Ottawa Electric Motor Dataset. 
+# Motor Fault Diagnosis on STM32 with AI
 
-The dataset contains one healthy class and seven fault classes. Each class includes eight operating conditions, further divided into loaded and no-load, and each file is 10 seconds long.
-
-I segment each recording into 100 samples and convert them into time–frequency spectrograms via STFT.
-
-The spectrograms are sent from Python to the MCU over UART, upon receiving the data, the MCU performs diagnosis using an on-device CNN together with the inference logic implemented in main.c.
-
-In the master branch is the complete STM32 project, and in the python branch is the Python code.
+This project implements **motor fault diagnosis** using the **University of Ottawa Electric Motor Dataset**.  
+The workflow integrates **Python for preprocessing** and **STM32 MCU for on-device inference**.
 
 
 
- <img width="400" height="236" alt="image" src="https://github.com/user-attachments/assets/3c7ac6c6-b27e-473c-a099-6d1977b6c647" /> 
+## 🔹 Dataset
+- **Classes**: 1 healthy + 7 fault classes  
+- **Operating conditions**: 8 per class  
+- **Load conditions**: loaded / no-load  
+- **File length**: 10 seconds each  
 
 
-<img width="236" height="213" alt="image" src="https://github.com/user-attachments/assets/d7e5b568-44ef-48a1-b2d7-8de79d2e7154" /><img width="220" height="214" alt="image" src="https://github.com/user-attachments/assets/c677160e-ada9-45ed-a751-060515095fe4" />
+
+## 🔹 Data Processing
+1. Each 10-second recording is segmented into **100 samples**.  
+2. Signals are converted into **time–frequency spectrograms** using **STFT**.  
+3. Spectrograms are sent from **Python → STM32 MCU** via **UART**.  
+
+
+
+## 🔹 On-Device Diagnosis
+- The MCU runs a **CNN-based classifier**.  
+- Inference logic is implemented in **`main.c`**.  
+- Supports **real-time motor fault detection** on embedded hardware.  
+
+
+
+## 🔹 Project Structure
+- **`master` branch** → Complete STM32 project  
+- **`python` branch** → Python preprocessing and communication scripts  
+
+
+
+## 🔹 Demo Screenshots
+
+### ✅ MCU Log (Successful AI Model Initialization)
+<img width="598" height="301" alt="132132" src="https://github.com/user-attachments/assets/2004a691-e4a9-41fe-bc73-a0c136c75271" />
+
+### 🔌 STM32 Development Board
+<img width="236" height="213" alt="board1" src="https://github.com/user-attachments/assets/d7e5b568-44ef-48a1-b2d7-8de79d2e7154" />
+<img width="220" height="214" alt="board2" src="https://github.com/user-attachments/assets/c677160e-ada9-45ed-a751-060515095fe4" />
+
+
 
