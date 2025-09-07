@@ -35,7 +35,7 @@ MCU: STM32F407
 
 ## 🔹 Demo Screenshots
 
-### ✅ Waiting for STFT images
+### ✅ Waiting for data
 <img width="598" height="301" alt="132132" src="https://github.com/user-attachments/assets/2004a691-e4a9-41fe-bc73-a0c136c75271" />
 
 ### 🔌 MCU Diagnosis Result
