@@ -1,7 +1,7 @@
 # Motor Fault Diagnosis on STM32 with AI
 
 This project implements **motor fault diagnosis** using the **University of Ottawa Electric Motor Dataset**.  
-The workflow integrates **Python for preprocessing** and **MCU for on-device inference**.
+The workflow integrates **Python for data preprocessing, model quantization** and **MCU for on-device inference**.
 
 MCU: STM32F407
 
